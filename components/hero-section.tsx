@@ -28,7 +28,7 @@ function TypingText({ text, className }: { text: string; className?: string }) {
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
       <div className="max-w-5xl mx-auto text-center">
         <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance">
           <span className="hero-gradient-text">

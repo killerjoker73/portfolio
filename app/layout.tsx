@@ -53,7 +53,6 @@ export default function RootLayout({
         />
       </head>
       <body className={`font-sans ${inter.variable} ${orbitron.variable} ${spaceMono.variable} antialiased`}>
-        <Nav />
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>
