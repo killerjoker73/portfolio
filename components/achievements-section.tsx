@@ -9,7 +9,7 @@ export function AchievementsSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl sm:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">Achievements</span>
+            <span className="text-custom-red">Achievements</span>
           </h2>
           <p className="text-muted-foreground text-lg">Recognition and awards in technology competitions</p>
         </div>

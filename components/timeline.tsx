@@ -34,7 +34,7 @@ export function Timeline({ achievements, className }: TimelineProps) {
               className={`flex items-center gap-8 ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"}`}
             >
               <Card
-                className={`glass p-6 flex-1 group hover:scale-105 transition-all duration-300 min-h-[200px] ${isEven ? "lg:text-right" : "lg:text-left"}`}
+                className={`glass p-6 flex-1 group hover:scale-105 transition-all duration-300 min-h-[200px] border-4 border-red-500 ${isEven ? "lg:text-right" : "lg:text-left"}`}
               >
                 <div className={`flex items-start gap-4 ${isEven ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
                   <motion.div

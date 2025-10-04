@@ -28,8 +28,10 @@ function TypingText({ text, className }: { text: string; className?: string }) {
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
-      <div className="max-w-5xl mx-auto text-center">
+    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 relative">
+      {/* Subtle cloudy background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-secondary/10 pointer-events-none" />
+      <div className="max-w-5xl mx-auto text-center relative z-10">
         <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance">
           <span className="hero-gradient-text">
             <TypingText text="Cloud, DevOps & Automation" />
@@ -37,7 +39,7 @@ export function HeroSection() {
         </h1>
 
         <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-center">
-          <span className="bg-gradient-to-r from-accent via-primary to-secondary bg-clip-text text-transparent">
+          <span className="text-custom-red">
             Pranav Purohit
           </span>
         </h2>
@@ -55,7 +57,7 @@ export function HeroSection() {
             href="https://drive.google.com/file/d/1qhOjTjPzmRhsNriBeFUiEUus5_P8P6EH/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 text-lg glow-orange group rounded-xl transition-all duration-300 hover:scale-105 mx-auto"
+            className="inline-flex items-center justify-center bg-custom-red hover:bg-custom-red/90 text-white font-semibold px-8 py-4 text-lg group rounded-xl transition-all duration-300 hover:scale-105 mx-auto"
           >
             Resume
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

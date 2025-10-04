@@ -60,7 +60,7 @@ export function GitHubSection() {
           <div className="flex items-center justify-center gap-3 mb-4">
             <Github className="h-12 w-12 text-primary" />
             <h2 className="font-display text-4xl sm:text-5xl font-bold">
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              <span className="text-custom-red">
                 My GitHub
               </span>
             </h2>
@@ -69,7 +69,7 @@ export function GitHubSection() {
         </div>
 
         {/* Terminal mockup */}
-        <Card className="glass p-6 mb-12 max-w-3xl mx-auto">
+        <Card className="glass p-6 mb-12 max-w-3xl mx-auto border-2 border-red-500">
           <div className="flex items-center gap-2 mb-4">
             <div className="h-3 w-3 rounded-full bg-destructive" />
             <div className="h-3 w-3 rounded-full bg-accent" />
@@ -89,7 +89,7 @@ export function GitHubSection() {
         {/* GitHub repos */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {repos.map((repo, index) => (
-            <Card key={`repo-${index}-${repo.name}`} className="glass p-6 group hover:scale-105 transition-all duration-300 cursor-pointer">
+            <Card key={`repo-${index}-${repo.name}`} className="glass p-6 group hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-red-500">
               <div className="flex items-start justify-between mb-4">
                 <Github className="h-6 w-6 text-primary group-hover:text-secondary transition-colors" />
                 <div className="flex items-center gap-3 text-sm text-muted-foreground">

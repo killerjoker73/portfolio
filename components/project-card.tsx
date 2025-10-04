@@ -25,7 +25,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
     >
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
-          <Card className="group cursor-pointer glass hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+          <Card className="group cursor-pointer glass hover:scale-105 transition-all duration-300 hover:shadow-2xl border-4 border-red-500">
             <div className="relative overflow-hidden rounded-t-lg">
               <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
                 <Play className="h-12 w-12 text-primary group-hover:text-secondary transition-colors" />
@@ -79,7 +79,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           </Card>
         </DialogTrigger>
 
-        <DialogContent className="glass max-w-4xl">
+        <DialogContent className="glass max-w-4xl border-red-500/30">
           <DialogHeader>
             <DialogTitle className="text-2xl font-display">{project.title}</DialogTitle>
             <DialogDescription className="text-lg">

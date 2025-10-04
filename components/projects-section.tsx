@@ -7,7 +7,7 @@ export function ProjectsSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl sm:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="text-custom-red">
               Top Projects
             </span>
           </h2>
